@@ -13,8 +13,8 @@ As the OAIF's config/manifest loader, :stars: Le cromossome :stars: currently co
 
 # Roadmap
 
-- [*] Make v1
-- [*] Make v1-repl manifest
+- [x] Make v1
+- [x] Make v1-repl manifest
 - [ ] Add the MANIFEST.MD
 
 # About the sofware
