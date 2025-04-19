@@ -1,0 +1,5 @@
+manifest: v1-repl
+- file1.py: true
+- file2.py: true
+-- prefix: teste
+- file3.py: false

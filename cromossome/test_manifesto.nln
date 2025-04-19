@@ -1,0 +1,2 @@
+manifest: v1-repl
+- example.py: true
