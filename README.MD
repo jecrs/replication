@@ -16,7 +16,7 @@ Any of the modules may be used togheter or alone by your discression
 
 - [x] Make Cromossome v1 and the v1-repl manifesto
 - [x] Make a Github for the project
-- [ ] Make Meiosis
+- [x] Make Meiosis
 - [ ] Make Mitosis
 - [ ] Make Apoptosis
 
