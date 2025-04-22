@@ -8,7 +8,7 @@ As an OAIF replication contains 4 main parts:
 - Cromossome: The configuration/manifesto loader module
 - Meiosis: The REPL CLI module
 - Mitosis: The GUI module
-- Apoptosis: [MAYBE WONT HAPPEN] The file integrety verification and cache layer
+- Apoptosis: The file integrety verification and cache layer
 
 Any of the modules may be used togheter or alone by your discression
 
