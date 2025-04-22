@@ -15,7 +15,7 @@ My good brother in Rah, make sure to copy the cromossome folder to inside the me
 
 # Roadmap
 
-- [*] Make v1
+- [x] Make v1
 - [ ] Make the 'meiosis-internals-v1' command package with stuff that will make the experience of using this not so miserable
 - [ ] Add the MANUAL.MD
 - [ ] Add some sort of piping debauchery
