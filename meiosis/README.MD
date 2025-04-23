@@ -12,13 +12,13 @@ As the OAIF's REPL/CLI Meiosis currently contains the following
 - imports - A Folder with testing/default issue imports, currently it only contains the `internals` package
 # ATTENTION
 
-My good brother in Rah, make sure to copy the cromossome folder to inside the meiosis folder when you want to run this, when automatic building is made it wont be nescessary but you will need to build the aplication before testing
+My good brother in Rah, make sure to copy the `cromossome` folder to inside the `meiosis` folder when you want to run this, when automatic building is made it wont be nescessary but you will need to build the aplication before testing
 
 # Roadmap
 
 - [x] Make v1
 - [x] Make the 'meiosis_internals' command package with stuff that will make the experience of using this not so miserable
-- [ ] Add the MANUAL.MD
+- [ ] Add the `MANUAL.MD`
 - [ ] Add some sort of piping debauchery
 
 # About the sofware
