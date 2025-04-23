@@ -36,7 +36,7 @@ look_up_table = load_hooks_from_manifesto(data)
 print ("Cromosome has provided all the hooks declared, finishing launch preparations")
 # Do all the other launch prep here
 command_list = list(look_up_table.keys())
-command_list_str = '- '+('\n -'.join(command_list))
+command_list_str = ' -'+('\n -'.join(command_list))
 last_error = ''
 # Do all the other launch prep here
 print ("All launch preparations OK! launching in 1")
@@ -50,7 +50,8 @@ print (
     To list all installed commands type '?' then enter
     """
 )
-while True:
+rf = True
+while rf:
 
     data = input(">")
     if data == "?":
@@ -61,20 +62,31 @@ while True:
         continue
     dl = len(data)
     ef = True
+
     for comm in command_list:
         data = data.removeprefix(comm).removeprefix(" ")
         if len(data) != dl:
+            ef = False
             try:
-                look_up_table[comm](data.split(" "))
+                result = look_up_table[comm](data.split(" "))
+                if result != None:
+                    match result:
+                        case 0: # SUCCESS_CODE
+                            pass
+                        case 1: # FAIL_CODE
+                            print("[Warning] The last command exited with an error")
+                        case 1001: #SS_GRACEFUL_EXIT:
+                            rf = False
+                            break
+
+                        case 1002: #SS_CRASH
+                            print("[Fatal Error] The last command required an meiosis crash, thats all we know")
+                            rf = False
+                            break
             except:
                 last_error = format_exc()
-                print("[Warning] The last command exited with an error, to print the last error type '*' then enter")
-            ef = False
+                print("[Warning] The last command crashed whilst execution was happening, to print the last error type '*' then enter")
+            
             break
     if ef:
         print("[Error] Invalid Command, to get a list of comand type '?' then enter")
-
-    
-
-            
-            
