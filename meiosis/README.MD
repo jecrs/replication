@@ -7,8 +7,9 @@ As the OAIF's REPL/CLI Meiosis currently contains the following
 
 - main.py - the main file that contains the logic for reading and parsing the manifests
 - settings.nln - the testing settings file, make sure to update it with prod settings
+- manifest.nln - a basic cromossome manifest file for meiosis, its a good starting point if you want to make your own meiosis app
 - MANUAL.MD - TBA a markdown explaining the operation and development for Meiosis
-
+- imports - A Folder with testing/default issue imports, currently it only contains the `internals` package
 # ATTENTION
 
 My good brother in Rah, make sure to copy the cromossome folder to inside the meiosis folder when you want to run this, when automatic building is made it wont be nescessary but you will need to build the aplication before testing
@@ -16,7 +17,7 @@ My good brother in Rah, make sure to copy the cromossome folder to inside the me
 # Roadmap
 
 - [x] Make v1
-- [ ] Make the 'meiosis-internals-v1' command package with stuff that will make the experience of using this not so miserable
+- [x] Make the 'meiosis_internals' command package with stuff that will make the experience of using this not so miserable
 - [ ] Add the MANUAL.MD
 - [ ] Add some sort of piping debauchery
 
