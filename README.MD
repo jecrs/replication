@@ -14,10 +14,10 @@ Any of the modules may be used togheter or alone by your discression
 
 # Roadmap
 
-- [x] Make Cromossome v1 and the v1-repl manifesto
+- [x] Make Cromossome v1 and the `v1-repl` manifesto
 - [x] Make a Github for the project
 - [x] Make Meiosis
-- [ ] Make Mitosis
+- [ ] Make Mitosis and the `v1-gui` manifesto
 - [ ] Make Apoptosis
 
 # About the sofware
